@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RiDigital — AI-Powered Digital Marketing Agency Lahore</title>
+<meta name="description" content="RiDigital is Lahore's leading AI-powered digital marketing agency. Social Media, Google Ads, Meta Ads, SEO, WhatsApp Marketing, AI Automation. Free strategy call available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "RiDigital",
+  "description": "AI-powered digital marketing agency in Lahore, Pakistan.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "13-B Lake Road",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "postalCode": "54000",
+    "addressCountry": "PK"
+  },
+  "telephone": "+923214847070",
+  "url": "https://azhargolds.github.io/ridigital"
+}
+</script>
+
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --blue: #1a56db;
+    --blue-dark: #1044b8;
+    --blue-light: #eff6ff;
+    --accent: #06b6d4;
+    --white: #ffffff;
+    --mist: #f8fafc;
+    --mid: #6b7280;
+    --border: #e5e7eb;
+    --radius: 6px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    width: 36px; height: 36px;
+    background: var(--blue);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--white);
+    font-family: 'Syne', sans-serif;
+  }
+
+  .nav-name {
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Syne', sans-serif;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--mid);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--blue); }
+
+  .nav-cta {
+    background: var(--blue);
+    color: var(--white) !important;
+    padding: 8px 20px;
+    border-radius: var(--radius);
+    font-weight: 600 !important;
+  }
+
+  .nav-cta:hover { background: var(--blue-dark) !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1a56db 100%);
+    display: flex;
+    align-items: center;
+    padding: 120px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .hero-glow {
+    position: absolute;
+    top: 20%; right: 10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(6,182,212,0.15);
+    border: 1px solid rgba(6,182,212,0.3);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+  }
+
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(40px, 6vw, 72px);
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    max-width: 800px;
+  }
+
+  .hero h1 span {
+    background: linear-gradient(135deg, var(--accent), #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-desc {
+    color: rgba(255,255,255,0.65);
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 48px;
+    max-width: 560px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--ink);
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: opacity 0.2s, transform 0.1s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  .btn-ghost {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .btn-ghost:hover { border-color: var(--accent); background: rgba(6,182,212,0.1); }
+
+  .hero-metrics {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .metric strong {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--white);
+    font-family: 'Syne', sans-serif;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .metric span {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    font-weight: 500;
+  }
+
+  /* SERVICES */
+  .services {
+    padding: 100px 40px;
+    background: var(--white);
+  }
+
+  .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 4vw, 44px);
+    color: var(--ink);
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+
+  .section-desc {
+    color: var(--mid);
+    font-size: 16px;
+    max-width: 520px;
+    line-height: 1.7;
+    margin-bottom: 64px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .service-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--accent));
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .service-card:hover {
+    border-color: var(--blue);
+    box-shadow: 0 8px 32px rgba(26,86,219,0.1);
+    transform: translateY(-2px);
+  }
+
+  .service-card:hover::before { opacity: 1; }
+
+  .service-icon {
+    width: 52px; height: 52px;
+    background: var(--blue-light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+
+  /* WHY */
+  .why {
+    padding: 100px 40px;
+    background: var(--mist);
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-top: 64px;
+  }
+
+  .why-features { display: flex; flex-direction: column; gap: 28px; }
+
+  .why-feature {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .why-icon {
+    width: 44px; height: 44px;
+    background: var(--blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .why-feature h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .why-feature p {
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+
+  .why-card {
+    background: linear-gradient(135deg, var(--blue) 0%, #1044b8 100%);
+    border-radius: 16px;
+    padding: 48px;
+    color: var(--white);
+  }
+
+  .why-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .why-card p {
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .why-card-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .why-stat {
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .why-stat strong {
+    display: block;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+
+  .why-stat span {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* PROCESS */
+  .process {
+    padding: 100px 40px;
+    background: var(--white);
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    counter-reset: steps;
+  }
+
+  .process-step {
+    counter-increment: steps;
+    position: relative;
+  }
+
+  .step-num {
+    width: 52px; height: 52px;
+    background: var(--blue-light);
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--blue);
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .process-step h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .process-step p {
+    font-size: 14px;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: 100px 40px;
+    background: linear-gradient(135deg, #0f172a, #1a56db);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .cta-inner { position: relative; z-index: 1; }
+
+  .cta-section h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 4vw, 52px);
+    color: var(--white);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .cta-section p {
+    color: rgba(255,255,255,0.65);
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #050505;
+    padding: 60px 40px 32px;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand p {
+    color: rgba(255,255,255,0.45);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 16px;
+    max-width: 300px;
+  }
+
+  .footer-col h4 {
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .footer-col ul { list-style: none; }
+
+  .footer-col ul li {
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-col ul li a:hover { color: var(--accent); }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom p { color: rgba(255,255,255,0.3); font-size: 13px; }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 100px 20px 60px; }
+    .hero-metrics { gap: 24px; }
+    .services { padding: 60px 20px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .why { padding: 60px 20px; }
+    .why-grid { grid-template-columns: 1fr; gap: 40px; }
+    .process { padding: 60px 20px; }
+    .process-grid { grid-template-columns: 1fr 1fr; }
+    .cta-section { padding: 60px 20px; }
+    footer { padding: 40px 20px 24px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <div class="nav-logo">Ri</div>
+    <span class="nav-name">RiDigital</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="https://wa.me/923214847070" class="nav-cta">Free Strategy Call</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">🤖 AI-Powered Marketing · Lahore, Pakistan</div>
+    <h1>Grow Your Business with <span>AI-Powered</span> Digital Marketing</h1>
+    <p class="hero-desc">RiDigital combines cutting-edge AI automation with proven digital marketing strategies to help Lahore businesses generate more leads, close more sales and scale faster.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/923214847070" class="btn-primary">💬 Free Strategy Call</a>
+      <a href="tel:+923214847070" class="btn-ghost">📞 0321-4847070</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric"><strong>100+</strong><span>Clients Served</span></div>
+      <div class="metric"><strong>3x</strong><span>Average ROI</span></div>
+      <div class="metric"><strong>24/7</strong><span>AI Automation</span></div>
+      <div class="metric"><strong>Free</strong><span>First Consultation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <span class="section-label">What We Do</span>
+    <h2 class="section-title">Everything Your Business<br>Needs to Grow Online</h2>
+    <p class="section-desc">From running your ads to automating your follow-ups — we handle your entire digital presence so you can focus on running your business.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Social Media Management</h3>
+        <p>Content creation, scheduling, community management and growth strategy for Facebook, Instagram and LinkedIn — all handled for you.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎯</div>
+        <h3>Google & Meta Ads</h3>
+        <p>Data-driven paid advertising campaigns that target the right audience at the right time. We manage your budget for maximum ROI.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔍</div>
+        <h3>SEO & Content</h3>
+        <p>Rank higher on Google and attract organic traffic with keyword-optimised content, technical SEO and local search domination.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💬</div>
+        <h3>WhatsApp Marketing</h3>
+        <p>Automated WhatsApp campaigns, chatbots and follow-up sequences that capture and convert leads 24/7 without manual effort.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>AI Marketing Automation</h3>
+        <p>Smart workflows that qualify leads, send follow-ups, book appointments and nurture prospects automatically using AI.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Website Development</h3>
+        <p>Fast, mobile-first websites and landing pages built to convert visitors into leads and customers for your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="section-inner">
+    <span class="section-label">Why RiDigital</span>
+    <h2 class="section-title">We're Not a Typical Agency</h2>
+    <div class="why-grid">
+      <div class="why-features">
+        <div class="why-feature">
+          <div class="why-icon">🤖</div>
+          <div>
+            <h4>AI-First Approach</h4>
+            <p>We use AI to automate repetitive tasks, analyse data faster and deliver better results at lower cost than traditional agencies.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-icon">📊</div>
+          <div>
+            <h4>Data-Driven Decisions</h4>
+            <p>Every campaign decision is backed by real data. We track, measure and optimise continuously — no guesswork.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-icon">🇵🇰</div>
+          <div>
+            <h4>Pakistan Market Experts</h4>
+            <p>We understand the Lahore and Pakistan market deeply — local culture, buying behaviour and what actually converts.</p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-icon">⚡</div>
+          <div>
+            <h4>Fast Execution</h4>
+            <p>No bureaucracy, no slow agencies. We move fast — campaigns live in days, not weeks. Results you can see quickly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-card">
+        <h3>Ready to Scale Your Business?</h3>
+        <p>Book a free 30-minute strategy call. We'll audit your current digital presence and show you exactly how to get more leads.</p>
+        <div class="why-card-stats">
+          <div class="why-stat"><strong>Free</strong><span>Strategy Call</span></div>
+          <div class="why-stat"><strong>30 Min</strong><span>Session</span></div>
+          <div class="why-stat"><strong>Zero</strong><span>Obligation</span></div>
+          <div class="why-stat"><strong>100%</strong><span>Actionable</span></div>
+        </div>
+        <br>
+        <a href="https://wa.me/923214847070" style="display:inline-block;background:white;color:#1a56db;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:700;font-size:15px;margin-top:8px;">💬 Book Free Call →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="section-inner">
+    <span class="section-label">How It Works</span>
+    <h2 class="section-title">From Strategy to Results<br>in 4 Simple Steps</h2>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Free Strategy Call</h3>
+        <p>We audit your current digital presence and understand your business goals — completely free, no obligation.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Custom Plan</h3>
+        <p>We build a tailored digital marketing plan with clear goals, timelines and expected results for your business.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Launch & Execute</h3>
+        <p>Campaigns go live, automation is set up and your digital presence starts working for you 24/7.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>Optimise & Scale</h3>
+        <p>We track results, optimise weekly and scale what's working so your ROI keeps improving over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Ready to Grow Your Business?</h2>
+    <p>Book a free strategy call today — no commitment, just actionable insights.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/923214847070" class="btn-primary">💬 WhatsApp: 0321-4847070</a>
+      <a href="https://cal.com/ridigital/discovery-call" class="btn-ghost">📅 Book Strategy Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-brand">
+        <div class="nav-logo">Ri</div>
+        <span class="nav-name" style="color:white;">RiDigital</span>
+      </div>
+      <p>AI-powered digital marketing agency helping Lahore businesses grow faster with smarter marketing and automation.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li>Social Media Management</li>
+        <li>Google & Meta Ads</li>
+        <li>SEO & Content</li>
+        <li>WhatsApp Marketing</li>
+        <li>AI Automation</li>
+        <li>Website Development</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/923214847070">WhatsApp: 0321-4847070</a></li>
+        <li><a href="mailto:azhargolds@gmail.com">azhargolds@gmail.com</a></li>
+        <li>13-B Lake Road, Lahore</li>
+        <li><a href="https://cal.com/ridigital/discovery-call">Book Free Call</a></li>
+        <li><a href="https://azhargolds.github.io">R I Signs & Graphics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 RiDigital. All rights reserved.</p>
+    <p>Lahore, Pakistan · AI-Powered Marketing</p>
+  </div>
+</footer>
+
+</body>
+</html>
